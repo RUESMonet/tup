@@ -123,34 +123,6 @@
   color: var(--text-muted);
 }
 
-.image-workbench > .workspace-tabs {
-  position: sticky;
-  z-index: 20;
-  top: 8px;
-  width: max-content;
-  max-width: 100%;
-  margin: 0 auto 14px;
-  border-color: var(--studio-border);
-  border-radius: 13px;
-  padding: 4px;
-  background: rgba(2, 6, 23, 0.56);
-  box-shadow: 0 8px 26px rgba(0, 0, 0, 0.14);
-  backdrop-filter: none;
-}
-
-.image-workbench > .workspace-tabs button {
-  min-height: 34px;
-  border-radius: 9px;
-  padding: 7px 12px;
-  font-size: 13px;
-  font-weight: 760;
-}
-
-.image-workbench > .workspace-tabs button.active {
-  color: #f8fafc;
-  background: rgba(30, 41, 59, 0.92);
-  box-shadow: inset 0 0 0 1px rgba(125, 211, 252, 0.22);
-}
 
 .studio-panel {
   min-width: 0;
@@ -737,14 +709,6 @@
     justify-content: flex-start;
   }
 
-  .image-workbench > .workspace-tabs {
-    width: 100%;
-    overflow-x: auto;
-  }
-
-  .image-workbench > .workspace-tabs button {
-    flex: 1 0 112px;
-  }
 
   .studio-flow-header.compact,
   .canvas-production-tray {
@@ -775,9 +739,6 @@
   width: min(1680px, 100%);
 }
 
-.workspace-light-shell .workspace-tabs {
-  display: none;
-}
 
 .ant-asset-gallery {
   display: grid;
@@ -858,51 +819,6 @@ video.asset-preview-media {
   }
 }
 
-@media (max-width: 1280px) {
-  .workspace-light-shell .creative-canvas-shell.ant-creative-canvas-shell {
-    grid-template-columns: minmax(260px, 0.34fr) minmax(0, 1fr);
-  }
-
-  .workspace-light-shell .creative-canvas-shell.ant-creative-canvas-shell .canvas-inspector-panel {
-    display: block;
-    grid-column: 1 / -1;
-    padding: 0;
-  }
-
-  .workspace-light-shell .creative-canvas-shell.ant-creative-canvas-shell .canvas-inspector-panel > .ant-card-body {
-    grid-template-columns: 1fr;
-  }
-}
-
-@media (max-width: 1200px) {
-  .workspace-light-shell .creative-canvas-shell.ant-creative-canvas-shell {
-    grid-template-columns: minmax(260px, 0.34fr) minmax(0, 1fr);
-  }
-
-  .workspace-light-shell .creative-canvas-shell.ant-creative-canvas-shell .canvas-inspector-panel {
-    display: block;
-    grid-column: 1 / -1;
-    padding: 0;
-  }
-
-  .workspace-light-shell .creative-canvas-shell.ant-creative-canvas-shell .canvas-inspector-panel > .ant-card-body {
-    grid-template-columns: 1fr;
-  }
-}
-
-@media (max-width: 860px) {
-  .workspace-light-shell .creative-canvas-shell.ant-creative-canvas-shell {
-    grid-template-columns: 1fr;
-  }
-
-  .workspace-light-shell .creative-canvas-shell.ant-creative-canvas-shell .canvas-inspector-panel {
-    grid-column: auto;
-  }
-
-  .workspace-light-shell .creative-canvas-shell.ant-creative-canvas-shell .canvas-inspector-panel > .ant-card-body {
-    grid-template-columns: 1fr;
-  }
-}
 
 @media (max-width: 760px) {
   .workspace-light-shell .workspace-ant-tabs > .ant-tabs-nav {

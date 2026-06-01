@@ -116,7 +116,6 @@
 
 .project-topbar,
 .project-create-card form,
-.workspace-tabs,
 .asset-chip-row {
   display: flex;
   align-items: center;
@@ -203,17 +202,6 @@
   font-size: 16px;
 }
 
-.workspace-tabs {
-  flex-wrap: wrap;
-  width: min(1240px, 100%);
-  margin: 0 auto clamp(16px, 2.5vw, 22px);
-  border: 1px solid var(--border);
-  border-radius: 999px;
-  padding: 6px;
-  background: rgba(15, 23, 42, 0.58);
-}
-
-.workspace-tabs button,
 .asset-chip-row button {
   display: inline-flex;
   align-items: center;
@@ -228,17 +216,11 @@
   cursor: pointer;
 }
 
-.workspace-tabs button:hover,
 .asset-chip-row button:hover {
   color: var(--text-primary);
   background: rgba(51, 65, 85, 0.64);
 }
 
-.workspace-tabs button.active {
-  color: #ffffff;
-  background: var(--gradient-primary);
-  box-shadow: 0 10px 28px rgba(37, 99, 235, 0.26);
-}
 
 .studio-workspace-shell {
   display: grid;
