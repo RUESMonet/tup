@@ -1,0 +1,15 @@
+{
+  "name": "image-gen-optimizer",
+  "version": "0.1.0",
+  "private": true,
+  "workspaces": [
+    "frontend"
+  ],
+  "scripts": {
+    "dev": "sh -c \"trap 'kill \\$(jobs -p) 2>/dev/null' EXIT; npm run dev:backend & npm run dev:frontend\"",
+    "dev:backend": ".venv/bin/uvicorn src.main:app --reload --reload-dir src --reload-include '*.py' --reload-exclude '.venv/*' --reload-exclude 'node_modules/*' --reload-exclude 'frontend/dist/*'",
+    "dev:frontend": "npm --workspace frontend run dev -- --port 5173",
+    "build": "npm --workspace frontend run build",
+    "preview": "npm --workspace frontend run preview -- --port 4173"
+  }
+}

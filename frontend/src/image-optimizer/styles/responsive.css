@@ -1,0 +1,103 @@
+@media (max-width: 1100px) {
+  .image-layout,
+  .workspace-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .image-layout .image-result-panel {
+    position: static;
+  }
+}
+
+@media (max-width: 900px) {
+  .image-topbar,
+  .project-topbar {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .image-status {
+    max-width: none;
+    width: 100%;
+  }
+
+  .image-controls {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .image-controls label:first-child {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 760px) {
+  .image-only-shell,
+  .app-auth-shell,
+  .project-shell {
+    padding: 14px;
+  }
+
+  .image-topbar {
+    border-radius: var(--radius-md);
+  }
+
+  .image-action-row {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .panel-heading,
+  .panel-actions {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .panel-actions,
+  .icon-button {
+    width: 100%;
+  }
+
+  .image-layout,
+  .image-controls,
+  .guide-list,
+  .pattern-card-grid,
+  .candidate-grid,
+  .result-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .image-brand {
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  .image-brand .icon-button {
+    width: 42px;
+  }
+
+  .image-brand h1 {
+    font-size: 22px;
+  }
+
+  .image-editor-panel,
+  .image-reference-panel,
+  .image-result-panel {
+    border-radius: var(--radius-md);
+    padding: 14px;
+  }
+
+  .primary-image-action,
+  .secondary-image-action {
+    width: 100%;
+  }
+
+  .workspace-tabs {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding-bottom: 4px;
+  }
+
+  .workspace-tabs button {
+    flex: 1 0 max-content;
+  }
+}

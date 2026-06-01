@@ -1,0 +1,6 @@
+@import "./image-optimizer/styles/base.css";
+@import "./image-optimizer/styles/shell.css";
+@import "./image-optimizer/styles/editor.css";
+@import "./image-optimizer/styles/result.css";
+@import "./image-optimizer/styles/reference.css";
+@import "./image-optimizer/styles/responsive.css";

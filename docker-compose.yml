@@ -1,0 +1,34 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: tup-postgres
+    environment:
+      POSTGRES_DB: tup
+      POSTGRES_USER: tup
+      POSTGRES_PASSWORD: tup
+    ports:
+      - "5432:5432"
+    volumes:
+      - tup-postgres-data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U tup -d tup"]
+      interval: 5s
+      timeout: 5s
+      retries: 20
+
+  n8n:
+    image: n8nio/n8n:latest
+    container_name: tup-n8n
+    ports:
+      - "5678:5678"
+    environment:
+      N8N_HOST: 127.0.0.1
+      N8N_PORT: 5678
+      N8N_PROTOCOL: http
+      N8N_SECURE_COOKIE: "false"
+    volumes:
+      - tup-n8n-data:/home/node/.n8n
+
+volumes:
+  tup-postgres-data:
+  tup-n8n-data:
