@@ -26,6 +26,12 @@ Untitled-1
 # Local Claude/tooling metadata
 .claude/
 .superpowers/
+CLAUDE.md
+
+# Project-local notes and unpushed docs/tests
+next.md
+docs/
+tests/
 
 # Local databases and test artifacts
 data/*.db
