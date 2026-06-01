@@ -28,8 +28,9 @@ Untitled-1
 .superpowers/
 CLAUDE.md
 
-# Project-local notes and unpushed docs/tests
+# Project-local notes, plans, docs, and tests that should not be pushed
 next.md
+plan/
 docs/
 tests/
 
