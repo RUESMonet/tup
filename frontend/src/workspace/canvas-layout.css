@@ -1176,8 +1176,8 @@
 
 .ant-creative-canvas-shell {
   display: grid;
-  grid-template-columns: minmax(280px, 0.28fr) minmax(0, 1fr) minmax(260px, 0.26fr);
-  gap: clamp(14px, 1.6vw, 20px);
+  grid-template-columns: 260px minmax(0, 1fr) 260px;
+  gap: clamp(12px, 1.4vw, 18px);
   width: min(1480px, 100%);
   min-height: min(760px, calc(100vh - 210px));
   margin: 0 auto;
@@ -1191,6 +1191,11 @@
   background: rgba(255, 255, 255, 0.92);
   box-shadow: 0 18px 50px rgba(15, 23, 42, 0.08);
   overflow: hidden;
+}
+
+.workspace-light-shell .ant-canvas-panel {
+  display: block;
+  padding: 0;
 }
 
 .ant-canvas-panel > .ant-card-head,
@@ -1256,7 +1261,7 @@
 }
 
 .workspace-light-shell .canvas-production-tray {
-  grid-template-columns: 1.3fr 0.8fr 0.8fr;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr));
   gap: 14px;
   border-top: 1px solid #edf0f5;
   padding: 14px;
