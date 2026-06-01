@@ -3,8 +3,7 @@
   .project-create-card,
   .project-grid,
   .workspace-grid,
-  .asset-gallery,
-  .workspace-tabs {
+  .asset-gallery {
     width: min(100%, 940px);
   }
 
@@ -59,16 +58,6 @@
     border-radius: var(--radius-lg);
   }
 
-  .workspace-tabs {
-    flex-wrap: nowrap;
-    overflow-x: auto;
-    border-radius: var(--radius-md);
-    padding-bottom: 6px;
-  }
-
-  .workspace-tabs button {
-    flex: 1 0 max-content;
-  }
 
   .prompt-spec-grid,
   .prompt-skill-controls {

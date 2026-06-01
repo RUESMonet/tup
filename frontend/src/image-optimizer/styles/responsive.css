@@ -91,13 +91,4 @@
     width: 100%;
   }
 
-  .workspace-tabs {
-    flex-wrap: nowrap;
-    overflow-x: auto;
-    padding-bottom: 4px;
-  }
-
-  .workspace-tabs button {
-    flex: 1 0 max-content;
-  }
 }
